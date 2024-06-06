@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    word-spacing: 10px;
 }
 
 #navbar {
@@ -9,23 +8,19 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: rgba(165, 143, 255, 0.533);
-    word-spacing: 10px;
 }
 
 #navbar-content {
     display: flex;
-    word-spacing: 10px;
 }
 
 #login {
     display: flex;
-    word-spacing: 10px;
 }
 
 a {
     color: black;
     text-decoration: none;
-    word-spacing: 10px;
 }
 
 #logo {
