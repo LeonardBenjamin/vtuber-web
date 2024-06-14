@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+.spicy-rice-regular {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -10,22 +16,21 @@
     background-color: rgba(165, 143, 255, 0.533);
 }
 
-#navbar-content {
-    display: flex;
-}
-
-#login {
-    display: flex;
-}
-
-a {
-    color: black;
+a  {
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    word-spacing: 10%;
+
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;  
+    font-size: 20px;    
 }
 
 #logo {
-    width: 250px;
-    height: 50px;
-    padding-right: 20%;
-}
+    font-size: 30px;
 
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;  
+    font-size: 20px;    
+    text-align: center;
+}
