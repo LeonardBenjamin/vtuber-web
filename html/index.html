@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OCEANID PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +16,9 @@
             <a href="#" id="logo">OCEANID PROJECT</a>                
             <div id="navbar-content">
                 <a href="#" id="content">CONTACT</a>
-                <a href="#" id="content">MEMBERS</a>
+                <a href="talets.html" id="content">TALENTS</a>
                 <a href="#" id="content">ABOUT</a>
-                <a href="#" id="content">FANCLUB</a>
+                <a href="#" id="content">AUDITION</a>
                 <a href="#" id="content">NEWS</a>
             </div>
             <div id="login">
@@ -25,13 +26,49 @@
                 <a href="#">SIGNUP</a>
             </div>
         </div>
-        <div id="slideshow">
-            <div class="slideshow__slide">
-                <div class="slideshow__slide-caption">
-                    <h1 class="slideshow__slide-caption-title">OCEANID PROJECT</h1>
-                </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
-    </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/slide3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBRHPk424IAgK-UW7LtkdcStaGOeUYcnZQ",
+        authDomain: "vtuber-prj.firebaseapp.com",
+        projectId: "vtuber-prj",
+        storageBucket: "vtuber-prj.appspot.com",
+        messagingSenderId: "1034927521225",
+        appId: "1:1034927521225:web:142b8d56822ab8b4d57c18",
+        measurementId: "G-M6S5ZKKY1Q"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+<script src="../js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
