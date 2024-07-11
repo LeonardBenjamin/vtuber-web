@@ -38,7 +38,7 @@ a  {
     font-family: "Spicy Rice", serif;
     font-weight: 400;  
     font-size: 25px;    
-    text-align: center;
+    text-align: left;
 }
 
 #button {
@@ -62,4 +62,8 @@ a  {
     cursor: pointer;
 
     transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: rgba(165, 143, 255, 0.533);
 }
