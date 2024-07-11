@@ -10,12 +10,30 @@ welcomeDiv.appendChild(welcomeH4);
 
 
 
-
 let button = document.createElement('button');
 button.id = 'button';
 button.textContent = 'Join us now!';
 document.body.appendChild(button);
 button.appendChild(welcomeDiv);
+
+
+
+
+
+
+let audition = document.createElement('div');
+audition.id = 'audition';
+audition.textContent = 'Do you want to jon our project? Please click the button below to get more information!';
+document.body.appendChild(audition);
+
+let auditionButton = document.createElement('button');
+auditionButton.id = 'audition-button';
+auditionButton.textContent = 'Audition';
+audition.appendChild(auditionButton);
+
+auditionButton.addEventListener('click', () => {
+    window.location.href = 'audition.html';
+});
 
 
 let footer = document.createElement('footer');

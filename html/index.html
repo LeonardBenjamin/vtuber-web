@@ -13,17 +13,17 @@
 <body>
     <div id="content">
         <div id="navbar">
-            <a href="#" id="logo">OCEANID PROJECT</a>                
+            <a href="../html/index.html" id="logo">OCEANID PROJECT</a>                
             <div id="navbar-content">
-                <a href="#" id="content">CONTACT</a>
-                <a href="talets.html" id="content">TALENTS</a>
-                <a href="#" id="content">ABOUT</a>
-                <a href="#" id="content">AUDITION</a>
-                <a href="#" id="content">NEWS</a>
+                <a href="../html/contact.html" id="content">CONTACT</a>
+                <a href="../html/talets.html" id="content">TALENTS</a>
+                <a href="../html/about.html" id="content">ABOUT</a>
+                <a href="../html/audition.html" id="content">AUDITION</a>
+                <a href="../html/news.html" id="content">NEWS</a>
             </div>
             <div id="login">
-                <a href="#">LOGIN</a>
-                <a href="#">SIGNUP</a>
+                <a href="../html/login.html">LOGIN</a>
+                <a href="../html/signup.html">SIGNUP</a>
             </div>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -59,21 +59,21 @@
     </div>
     
 </body>
-<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
-<script>
-    var firebaseConfig = {
-        apiKey: "AIzaSyBRHPk424IAgK-UW7LtkdcStaGOeUYcnZQ",
-        authDomain: "vtuber-prj.firebaseapp.com",
-        projectId: "vtuber-prj",
-        storageBucket: "vtuber-prj.appspot.com",
-        messagingSenderId: "1034927521225",
-        appId: "1:1034927521225:web:142b8d56822ab8b4d57c18",
-        measurementId: "G-M6S5ZKKY1Q"
-    };
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyBRHPk424IAgK-UW7LtkdcStaGOeUYcnZQ",
+    authDomain: "vtuber-prj.firebaseapp.com",
+    projectId: "vtuber-prj",
+    storageBucket: "vtuber-prj.appspot.com",
+    messagingSenderId: "1034927521225",
+    appId: "1:1034927521225:web:142b8d56822ab8b4d57c18",
+    measurementId: "G-M6S5ZKKY1Q"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 </script>
 <script src="../js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

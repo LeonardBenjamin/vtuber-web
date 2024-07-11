@@ -76,3 +76,41 @@ a  {
 #footer {
     text-align: center;
 }    
+
+#audition {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;  
+    font-size: 25px;
+}
+
+#audition-button {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;  
+    font-size: 30px; 
+    text-align: center;
+
+    display: inline-block;
+
+    text-decoration: none;
+    
+    align-items: center;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(121, 97, 218, 0.745);
+    border: none;
+
+    padding: 20px 40px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+#audition-button:hover {
+    background-color: rgba(165, 143, 255, 0.533);
+}
+
+#audition h2 {
+    text-align: center;
+    font-size: 25px;
+}
